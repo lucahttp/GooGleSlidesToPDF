@@ -99,6 +99,7 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       (async () => {
         // Try to find the SVG elements (assuming they are still <svg> tags)
         const msvg = document.getElementsByTagName("svg");
+        console.log("SVG elements found:", msvg);
         if (!msvg.length) {
           console.error("No SVG elements found.");
           return;
