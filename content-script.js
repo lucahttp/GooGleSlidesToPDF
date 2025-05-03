@@ -108,7 +108,6 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
         let currentSlide = null;
         let allSVGHTML = "";
         let allSVGArray = [];
-
         // Function to try and get slide information
         const getSlideInfo = () => {
           // **This is a placeholder - you need to inspect the HTML to find the correct selectors**
@@ -170,7 +169,11 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
           allSVGHTML += msvg[0].outerHTML; // Append current SVG
           //sendResponse(msvg[0].outerHTML); // Send the updated SVG string back to the popup
 
-          allSVGArray.push(msvg[0].outerHTML);
+          //allSVGArray.push(msvg[0].outerHTML);
+
+          allSVGArray[currentSlide] = msvg[0].outerHTML; // Append current SVG to the array
+
+
 
           console.log(`Processing slide ${currentSlide} of ${slideCount}`);
 
@@ -240,31 +243,3 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
   }
   return true;
 });
-
-/*
-const handleUpdateUser = async (sendResponse) => {
-    const responseUser = await getUser();
-    user = responseUser;
-    await chrome.storage.local.set({ user });
-    sendResponse({ user });
-  };
-  
-  chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
-    //debug('Got message', request);
-    console.log('Got message', request);
-    if (request.type === 'getUser') {
-      sendResponse({ user });
-    } else if (request.type === 'updateUser') {
-      handleUpdateUser(sendResponse);
-    } else if (request.type === 'getSlides') {
-      sendResponse({ slides });
-    } else if (request.type === 'updateSlides') {
-      slides = request.slides;
-      sendResponse({ slides });
-    } else
-    if (request.type === 'updateUser') {
-      handleUpdateUser(sendResponse);
-    }
-    
-    return true;
-  })*/
