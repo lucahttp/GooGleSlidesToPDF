@@ -30,11 +30,13 @@ document.addEventListener("DOMContentLoaded", function () {
           });
       });
     }
+    var svgArray2 = svgArray.filter(element => element !== null);
 
-    for (let i = 0; i < svgArray.length; i++) {
+    for (let i = 0; i < svgArray2.length; i++) {
+      console.log("Processing SVG:", svgArray2[i]);
       const hiddenElement = document.createElement("div");
       hiddenElement.style.display = "none";
-      hiddenElement.innerHTML = svgArray[i];
+      hiddenElement.innerHTML = svgArray2[i];
       document.body.appendChild(hiddenElement);
       const svgElement = hiddenElement.querySelector("svg");
 
