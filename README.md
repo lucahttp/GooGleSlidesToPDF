@@ -1,10 +1,17 @@
+
 # Google Slides to PDF Extension
 I was tired of not being able to download the Slides from the university (some teachers doesn't share their ppt classes 😒) and following some tutorial we get to this
 
 ![image](https://github.com/user-attachments/assets/f4d5133b-cb30-45c3-85a3-74937578de75)
 
+## work in progrss
+only works getting the slide url like https://docs.google.com/presentation/d/e/2PACX-1asfdqwedaqwdasdq2wdeawdfssample/pubembed?start=false&loop=false&delayms=3000&slide=id.p37 . you can get it from the iframe url
+ 
+![enter image description here](https://private-user-images.githubusercontent.com/32082555/440580076-b3d3c177-f8b7-4aba-a7bc-1ef760e3a179.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY0ODU1NzYsIm5iZiI6MTc0NjQ4NTI3NiwicGF0aCI6Ii8zMjA4MjU1NS80NDA1ODAwNzYtYjNkM2MxNzctZjhiNy00YWJhLWE3YmMtMWVmNzYwZTNhMTc5LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA1VDIyNDc1NlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTcxZTZhZTFhM2M4NzdkYmVkMzM3ZTA4NDg3MjkwOThlYzY3NzcwZDE2NmY5YjU3MWQ3YTAyMjczMjUwZjUyYzUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.dNNDuFUjwkQDOFkPesskGBX4dPSAZCwSfYX-JX83JVI)
 ## How to Install
 tested on Google Chrome and Edge Chromium Browser
+
+
 
 
 1.  **Download the Extension Files:**
@@ -37,9 +44,9 @@ tested on Google Chrome and Edge Chromium Browser
         
 
 ### Src:
--   [**Develo](https://www.youtube.com/watch?v=BwO_dMqO7iI)
+-   [https://www.youtube.com/watch?v=BwO_dMqO7iI](https://www.youtube.com/watch?v=BwO_dMqO7iI)
 -   https://docs.google.com/document/d/13Mzrrjo_ei4JVyq6Vzc-UlvjohupJfevBlIXrN-qSQU/edit?tab=t.0
--
+- the script below
 ```javascript
 # Alternate Second URL if your pages are not properly rendered in the PDF/PPT
 var atag = "punch-viewer-content", 
