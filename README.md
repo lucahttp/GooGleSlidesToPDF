@@ -41,7 +41,13 @@ tested on Google Chrome and Edge Chromium Browser
 5.  **Extension Installed:**
     
     -   The extension should now be installed and appear in your browser's extension list.
-        
+
+
+
+## Would be nice to have
+- if image is not downloadable, copy the element with the content
+- download from the moodle website of the university
+- ocr the text or do something there
 
 ### Src:
 -   [https://www.youtube.com/watch?v=BwO_dMqO7iI](https://www.youtube.com/watch?v=BwO_dMqO7iI)
